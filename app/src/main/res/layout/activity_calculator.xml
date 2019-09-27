@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D3D3D"
+    android:textColor="#D1D1D1"
+    tools:context="com.example.reese.calculator.CalculatorActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/xx"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="62sp"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="85%" />
+
+    <Button
+        android:id="@+id/num0"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="10%"
+        android:textColor="#D1D1D1"
+        android:background="@drawable/buttonstyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/num00"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/num0"
+        android:background="@drawable/buttonstyle"
+        android:text="00"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_above="@+id/num0"
+        android:background="@drawable/buttonstyle"
+        android:text="1"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_above="@+id/num00"
+        android:layout_toEndOf="@+id/num1"
+        android:background="@drawable/buttonstyle"
+        android:text="2"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_above="@+id/point"
+        android:layout_toEndOf="@+id/num2"
+        android:background="@drawable/buttonstyle"
+        android:text="3"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_above="@+id/num1"
+        android:background="@drawable/buttonstyle"
+        android:text="4"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_above="@+id/num2"
+        android:layout_toEndOf="@+id/num4"
+        android:background="@drawable/buttonstyle"
+        android:text="5"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_above="@+id/num3"
+        android:layout_toEndOf="@+id/num5"
+        android:background="@drawable/buttonstyle"
+        android:text="6"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_above="@+id/num4"
+        android:background="@drawable/buttonstyle"
+        android:text="7"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_above="@+id/num5"
+        android:layout_toEndOf="@+id/num7"
+        android:background="@drawable/buttonstyle"
+        android:text="8"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_above="@+id/num6"
+        android:layout_toEndOf="@+id/num8"
+        android:background="@drawable/buttonstyle"
+        android:text="9"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_above="@+id/symbol"
+        android:layout_toEndOf="@+id/num6"
+        android:background="@drawable/buttonstyle"
+        android:text="+"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_above="@+id/num7"
+        android:background="@drawable/buttonstyle"
+        android:text="C"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+         />
+
+    <Button
+        android:id="@+id/xx"
+        android:layout_above="@+id/C"
+        android:background="@drawable/buttonstyle"
+        android:text="X^Y"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_above="@+id/multiplication"
+        android:layout_toEndOf="@+id/genhao"
+        android:background="@drawable/buttonstyle"
+        android:text="%"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/x1"
+        android:layout_above="@+id/delete"
+        android:layout_toEndOf="@+id/percent"
+        android:background="@drawable/buttonstyle"
+        android:text="1/x"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+
+    <Button
+        android:id="@+id/division"
+        android:layout_above="@+id/num8"
+        android:layout_toEndOf="@+id/C"
+        android:background="@drawable/buttonstyle"
+        android:text="÷"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/genhao"
+        android:layout_above="@+id/division"
+        android:layout_toEndOf="@+id/xx"
+        android:background="@drawable/buttonstyle"
+        android:text="x^1/2"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_above="@+id/num9"
+        android:layout_toEndOf="@+id/division"
+        android:background="@drawable/buttonstyle"
+        android:text="×"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_above="@+id/subtraction"
+        android:layout_toEndOf="@+id/multiplication"
+        android:background="@drawable/buttonstyle"
+        android:text="del"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        />
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_above="@+id/addition"
+        android:layout_toEndOf="@+id/num9"
+        android:background="@drawable/buttonstyle"
+        android:text="-"
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/num00"
+        android:layout_toStartOf="@+id/equal"
+        android:background="@drawable/buttonstyle"
+        android:text="."
+        android:textColor="#D1D1D1"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/equal"
+        android:text="="
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:textColor="#D1D1D1"
+        android:background="@drawable/buttonstyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/symbol"
+        android:text="+/-"
+        android:textSize="24sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:textColor="#D1D1D1"
+        android:background="@drawable/buttonstyle"
+        android:layout_above="@+id/equal"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonstyle"
+        android:text="二进制"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/eighth"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/num0"
+        android:background="@drawable/buttonstyle"
+        android:text="八进制"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/sixteenth"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/num00"
+        android:background="@drawable/buttonstyle"
+        android:text="十六进制"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/centigrade"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonstyle"
+        android:text="C/F"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/second"
+        android:background="@drawable/buttonstyle"
+        android:textAllCaps="false"
+        android:text="sin"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_below="@+id/second"
+        android:layout_toEndOf="@+id/num0"
+        android:background="@drawable/buttonstyle"
+        android:textAllCaps="false"
+        android:text="cos"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_below="@+id/second"
+        android:layout_toEndOf="@+id/num00"
+        android:background="@drawable/buttonstyle"
+        android:textAllCaps="false"
+        android:text="tan"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+    <Button
+        android:id="@+id/pai"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/second"
+        android:background="@drawable/buttonstyle"
+        android:text="π"
+        android:textColor="#D1D1D1"
+        android:textSize="14sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="25%" />
+
+</android.support.percent.PercentRelativeLayout>
