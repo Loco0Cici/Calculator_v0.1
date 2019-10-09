@@ -29,17 +29,17 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#307Dee"
+            android:background="#888888"
             android:text="C"
-            android:textSize="24dp" />
+            android:textSize="26dp" />
 
         <Button
             android:id="@+id/btnBackspace"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#ff5151"
-            android:textSize="24dp"
+            android:background="#959595"
+            android:textSize="26dp"
             android:text="Back" />
     </LinearLayout>
 
@@ -51,7 +51,7 @@
 
     <Button
             android:id="@+id/sin"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
         <Button
             android:id="@+id/cos"
             android:layout_width="0dip"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_height="match_parent"
             android:textAllCaps="false"
             android:layout_weight="1"
@@ -71,7 +71,7 @@
         <Button
             android:id="@+id/x2"
             android:layout_width="0dip"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textAllCaps="false"
@@ -80,7 +80,7 @@
         <Button
             android:id="@+id/x3"
             android:layout_width="0dip"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textAllCaps="false"
@@ -95,28 +95,28 @@
         >
         <Button
             android:id="@+id/sqrt"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="√"/>
         <Button
             android:id="@+id/left"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="("/>
         <Button
             android:id="@+id/right"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text=")"/>
         <Button
             android:layout_width="0dip"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_height="match_parent"
             android:id="@+id/multi"
             android:layout_weight="1"
@@ -130,28 +130,28 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/seven"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_weight="1"
             android:text="7"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <Button
             android:id="@+id/eight"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_weight="1"
             android:text="8"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <Button
             android:id="@+id/nine"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_weight="1"
             android:text="9"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <Button
             android:id="@+id/minus"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_weight="1"
             android:text="-"
             android:layout_width="0dp"
@@ -164,28 +164,28 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/four"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="4"/>
         <Button
             android:id="@+id/five"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5"/>
         <Button
             android:id="@+id/six"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6"/>
         <Button
             android:id="@+id/plus"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -198,28 +198,28 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/one"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="1"/>
         <Button
             android:id="@+id/two"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2"/>
         <Button
             android:id="@+id/three"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3"/>
         <Button
             android:id="@+id/div"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -234,7 +234,7 @@
 
         <Button
             android:id="@+id/zero"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -242,14 +242,14 @@
 
         <Button
             android:id="@+id/dot"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."/>
         <Button
             android:id="@+id/plusorminus"
-            android:textSize="24dp"
+            android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -262,7 +262,7 @@
             android:layout_weight="1"
             android:background="#F07D22"
             android:text="="
-            android:textSize="24dp" />
+            android:textSize="26dp" />
 
     </LinearLayout>
 
