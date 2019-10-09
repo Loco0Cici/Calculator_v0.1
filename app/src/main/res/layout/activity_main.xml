@@ -120,6 +120,7 @@
             android:layout_height="match_parent"
             android:id="@+id/multi"
             android:layout_weight="1"
+            android:background="#F07D22"
             android:text="*"/>
 
     </LinearLayout>
@@ -155,6 +156,7 @@
             android:layout_weight="1"
             android:text="-"
             android:layout_width="0dp"
+            android:background="#F07D22"
             android:layout_height="match_parent" />
     </LinearLayout>
     <LinearLayout
@@ -189,6 +191,7 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#F07D22"
             android:text="+"/>
     </LinearLayout>
     <LinearLayout
@@ -223,6 +226,7 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#F07D22"
             android:text="/"/>
     </LinearLayout>
     <LinearLayout
@@ -258,7 +262,7 @@
         <Button
             android:id="@+id/equals"
             android:layout_width="0dip"
-            android:layout_height="75dp"
+            android:layout_height="86dp"
             android:layout_weight="1"
             android:background="#F07D22"
             android:text="="
