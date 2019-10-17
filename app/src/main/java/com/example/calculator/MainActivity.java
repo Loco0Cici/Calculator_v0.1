@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.help:
-                Toast.makeText(MainActivity.this,"This is a hlep",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"This is a help",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.danwei:
                 Intent intent1 = new Intent(MainActivity.this,Danwei.class);
@@ -54,15 +54,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnSub=null;
     Button btnMul=null;
     Button btnDiv=null;
-    Button btnEqu=null;//
+    Button btnEqu=null;
     Button btnSqrt=null;
     Button btnSin = null;
     Button btnCos = null;
-    Button btnx2 = null;//
-    Button btnC = null;//
+    Button btnx2 = null;
+    Button btnC = null;
     Button btnLeft = null;
     Button btnRight = null;
-    Button btnPlu = null;//
+    Button btnPlu = null;
     Button btnDot = null;
     Button btnBack = null;
     Button btnx3 =null;
