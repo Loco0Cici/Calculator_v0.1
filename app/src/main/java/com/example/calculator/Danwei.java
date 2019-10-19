@@ -13,8 +13,8 @@ public class Danwei extends AppCompatActivity {
     public String start1 = "";
     public String ten1 = "";
     public int ten = 0;
-    public int flag1 = 0;
-    public int flag2 = 0 ;
+    public int flag1 = 7;//为了防止冲突，造成默认选择
+    public int flag2 = 10 ;//为了防止冲突，造成默认选择
     double m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,26 +106,43 @@ public class Danwei extends AppCompatActivity {
                 flag2 = 33;
             }
         });
-
+        Button20a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag2 = 44;
+            }
+        });
+        Button24a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag2 = 55;
+            }
+        });
+        Button32a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag2 = 66;
+            }
+        });
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (flag1 == 0) {
-                    m = Double.parseDouble(shuru.getText().toString());
-                    ten1 = String.valueOf(m/10);
-                    if (flag2 == 00) {
-                        shuchu.setText(shuru.getText().toString());
-                    } else if (flag2 == 11) {
-                        ten1 = String.valueOf(m/10);
-                        shuchu.setText(ten1);
-                    } else if (flag2 == 22) {
-                        ten1 = String.valueOf(m/100);
-                        shuchu.setText(ten1);
-                    } else if (flag2 == 33) {
-                        ten1 = String.valueOf(m/1000);
-                        shuchu.setText(ten1);
-                    } else
-                        Toast.makeText(Danwei.this, "请选择要转化的单位", Toast.LENGTH_SHORT);
+                        m = Double.parseDouble(shuru.getText().toString());
+                        ten1 = String.valueOf(m / 10);
+                        if (flag2 == 00) {
+                            shuchu.setText(shuru.getText().toString());
+                        } else if (flag2 == 11) {
+                            ten1 = String.valueOf(m / 10);
+                            shuchu.setText(ten1);
+                        } else if (flag2 == 22) {
+                            ten1 = String.valueOf(m / 100);
+                            shuchu.setText(ten1);
+                        } else if (flag2 == 33) {
+                            ten1 = String.valueOf(m / 1000);
+                            shuchu.setText(ten1);
+                        } else
+                            Toast.makeText(Danwei.this, "请选择正确的要转化的单位", Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 1) {
                     m = Double.parseDouble(shuru.getText().toString());
@@ -141,7 +158,7 @@ public class Danwei extends AppCompatActivity {
                         ten1 = String.valueOf(m/100);
                         shuchu.setText(ten1);
                     } else
-                        Toast.makeText(Danwei.this, "请选择要转化的单位", Toast.LENGTH_SHORT);
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 2) {
                     m = Double.parseDouble(shuru.getText().toString());
@@ -157,12 +174,13 @@ public class Danwei extends AppCompatActivity {
                         ten1 = String.valueOf(m/10);
                         shuchu.setText(ten1);
                     } else
-                        Toast.makeText(Danwei.this, "请选择要转化的单位", Toast.LENGTH_SHORT);
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 3) {
                     m = Double.parseDouble(shuru.getText().toString());
-                    ten1 = String.valueOf(m*1000);
+                    ten1 = String.valueOf(m);
                     if (flag2 == 00) {
+                        ten1 = String.valueOf(m*1000);
                         shuchu.setText(ten1);
                     } else if (flag2 == 11) {
                         ten1 = String.valueOf(m*100);
@@ -171,11 +189,53 @@ public class Danwei extends AppCompatActivity {
                         ten1 = String.valueOf(m*10);
                         shuchu.setText(ten1);
                     } else if (flag2 == 33) {
-                        shuchu.setText(start1);
+                        shuchu.setText(shuru.getText().toString());
                     } else
-                        Toast.makeText(Danwei.this, "请选择要转化的单位", Toast.LENGTH_SHORT);
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
                 }
-                else  Toast.makeText(Danwei.this, "请选择要转化的单位", Toast.LENGTH_SHORT);
+                if (flag1 == 4) {
+                    m = Double.parseDouble(shuru.getText().toString());
+                    ten1 = String.valueOf(m);
+                    if (flag2 == 44) {
+                        shuchu.setText(shuru.getText().toString());
+                    } else if (flag2 == 55) {
+                        ten1 = String.valueOf(m/1000);
+                        shuchu.setText(ten1);
+                    } else if (flag2 == 66) {
+                        ten1 = String.valueOf(m/1000000);
+                        shuchu.setText(ten1);
+                    } else
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
+                }
+                if (flag1 == 5) {
+                    m = Double.parseDouble(shuru.getText().toString());
+                    ten1 = String.valueOf(m);
+                    if (flag2 == 44) {
+                        ten1 = String.valueOf(m*1000);
+                        shuchu.setText(ten1);
+                    } else if (flag2 == 55) {
+                        shuchu.setText(shuru.getText().toString());
+                    } else if (flag2 == 66) {
+                        ten1 = String.valueOf(m/1000000);
+                        shuchu.setText(ten1);
+                    } else
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
+                }
+                if (flag1 == 6) {
+                    m = Double.parseDouble(shuru.getText().toString());
+                    ten1 = String.valueOf(m);
+                    if (flag2 == 44) {
+                        ten1 = String.valueOf(m*1000000);
+                        shuchu.setText(ten1);
+                    } else if (flag2 == 55) {
+                        ten1 = String.valueOf(m*1000);
+                        shuchu.setText(ten1);
+                    } else if (flag2 == 66) {
+                        shuchu.setText(shuru.getText().toString());
+                    } else
+                        Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();
+                }
+                //else {Toast.makeText(Danwei.this,"请选择正确的要转化的单位",Toast.LENGTH_SHORT).show();}
             }
 
 
