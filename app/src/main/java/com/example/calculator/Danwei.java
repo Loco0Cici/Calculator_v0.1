@@ -28,10 +28,17 @@ public class Danwei extends AppCompatActivity {
         RadioButton Button8  = (RadioButton)findViewById(R.id.button8);
         RadioButton Button10 = (RadioButton)findViewById(R.id.button10);
         RadioButton Button16  = (RadioButton)findViewById(R.id.button16);
+        RadioButton Button20  = (RadioButton)findViewById(R.id.button20);
+        RadioButton Button24  = (RadioButton)findViewById(R.id.button24);
+        RadioButton Button32  = (RadioButton)findViewById(R.id.button32);
         RadioButton Button2a  = (RadioButton)findViewById(R.id.button2a);
         RadioButton Button8a  = (RadioButton)findViewById(R.id.button8a);
         RadioButton Button10a  = (RadioButton)findViewById(R.id.button10a);
         RadioButton Button16a  = (RadioButton)findViewById(R.id.button16a);
+        RadioButton Button20a  = (RadioButton)findViewById(R.id.button20a);
+        RadioButton Button24a  = (RadioButton)findViewById(R.id.button24a);
+        RadioButton Button32a  = (RadioButton)findViewById(R.id.button32a);
+        //原数据的flag
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +63,25 @@ public class Danwei extends AppCompatActivity {
                 flag1 = 3;
             }
         });
+        Button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag1 = 4;
+            }
+        });
+        Button24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag1 = 5;
+            }
+        });
+        Button32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flag1 = 6;
+            }
+        });
+        //新数据的flag
         Button2a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

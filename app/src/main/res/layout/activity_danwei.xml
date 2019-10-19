@@ -50,6 +50,27 @@
                 android:layout_height="wrap_content"
                 android:text="米"
                 android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="厘米³" />
+
+            <RadioButton
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="分米³" />
+
+            <RadioButton
+                android:id="@+id/button32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="米³" />
         </RadioGroup>
     </LinearLayout>
         <LinearLayout
@@ -106,12 +127,34 @@
                     android:layout_height="wrap_content"
                     android:text="分米"
                     android:onClick="onRadioButtonClicked"/>
+
                 <RadioButton
                     android:id="@+id/button16a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="米"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:onClick="onRadioButtonClicked"
+                    android:text="米" />
+
+                <RadioButton
+                    android:id="@+id/button20a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="厘米³" />
+
+                <RadioButton
+                    android:id="@+id/button24a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="分米³" />
+
+                <RadioButton
+                    android:id="@+id/button32a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="米³" />
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
