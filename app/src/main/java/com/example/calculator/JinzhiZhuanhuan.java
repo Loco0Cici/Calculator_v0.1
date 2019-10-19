@@ -37,7 +37,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                 flag1 = 2;
             }
         });
-        Button8.setOnClickListener(new View.OnClickListener() { //8
+        Button8.setOnClickListener(new View.OnClickListener() { 
             @Override
             public void onClick(View v) {
                 flag1 = 8;
