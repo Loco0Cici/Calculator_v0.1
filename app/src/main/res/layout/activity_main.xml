@@ -299,14 +299,14 @@
             android:textColor="#FFFFFF"
             android:text="."/>
         <Button
-            android:id="@+id/plusorminus"
+            android:id="@+id/zerozero"
             android:textSize="26dp"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/bottomstyle3"
             android:textColor="#FFFFFF"
-            android:text="+/-"/>
+            android:text="00"/>
 
         <Button
             android:id="@+id/equals"
