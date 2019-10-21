@@ -31,6 +31,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
         RadioButton Button8a  = (RadioButton)findViewById(R.id.button8a);
         RadioButton Button10a  = (RadioButton)findViewById(R.id.button10a);
         RadioButton Button16a  = (RadioButton)findViewById(R.id.button16a);
+        //输入值的flag设定
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,10 +56,11 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                 flag1=16;
             }
         });
+        //输出值的flag设定
         Button2a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                flag2=2;
+                flag2= 2;
             }
         });
         Button8a.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +98,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                     } else if (flag2 == 16) {
                         shuchu.setText(Integer.toHexString(ten));
                     } else
-                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT);
+                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 8) {
                     ten1 = Integer.valueOf(start1, 8).toString();
@@ -110,7 +112,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                     } else if (flag2 == 16) {
                         shuchu.setText(Integer.toHexString(ten));
                     } else
-                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT);
+                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 10) {
                     ten1 = Integer.valueOf(start1, 10).toString();
@@ -125,7 +127,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                     } else if (flag2 == 16) {
                         shuchu.setText(Integer.toHexString(ten));
                     } else
-                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT);
+                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT).show();
                 }
                 if (flag1 == 16) {
                     ten1 = Integer.valueOf(start1, 16).toString();
@@ -139,7 +141,7 @@ public class JinzhiZhuanhuan extends AppCompatActivity {
                     } else if (flag2 == 16) {
                         shuchu.setText(Integer.toHexString(ten));
                     } else
-                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT);
+                        Toast.makeText(JinzhiZhuanhuan.this, "请选择要转化的数", Toast.LENGTH_SHORT).show();
                 }
                 else  Toast.makeText(JinzhiZhuanhuan.this, "请选择转化的数", Toast.LENGTH_SHORT);
             }
