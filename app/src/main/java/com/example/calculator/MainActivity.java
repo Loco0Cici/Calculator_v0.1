@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnC = null;
     Button btnLeft = null;
     Button btnRight = null;
-    Button btnPlu = null;
+    Button btn00 = null;
     Button btnDot = null;
     Button btnBack = null;
     Button btnx3 =null;
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDiv = (Button)findViewById(R.id.div);
         btnDot = (Button)findViewById(R.id.dot);
         btnEqu = (Button)findViewById(R.id.equals);
-        btnPlu = (Button)findViewById(R.id.plusorminus);
+        btn00 = (Button)findViewById(R.id.zerozero);
         editText = (EditText)findViewById(R.id.result_main) ;
 
 
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn7.setOnClickListener(this);
         btn8.setOnClickListener(this);
         btn9.setOnClickListener(this);
+        btn00.setOnClickListener(this);
 
         btnC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -222,16 +223,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(input, "onClick: ");
                 input= String.valueOf(Calculators.evaluateExpression(input));
                 Log.d(input, "onClick: ");
-                editText.setText(input);
-            }
-        });
-        this.btnPlu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                input = editText.getText().toString();
-                double d =  Double.parseDouble(input);
-                d=d*(-1);
-                input = String.valueOf(d);
                 editText.setText(input);
             }
         });
