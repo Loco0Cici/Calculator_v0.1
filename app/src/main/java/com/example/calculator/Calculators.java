@@ -114,6 +114,7 @@ public class Calculators {
         }
         else if (op=='s'){
             operandStack.push(Math.sin(op1*Math.PI/180));
+            //sin0!=0的问题的原因就是由于double双精度浮点数编码规则所导致精度损失，double是按IEEE754 标准进行编码的，这是一个国际标准。而double的浮点数只能近似精确值。
         }
         else if (op=='c'){
             operandStack.push(Math.cos(op1*Math.PI/180));
