@@ -23,31 +23,11 @@
         android:theme="@style/MyEditText"/>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_weight="0"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottomstyle"
-            android:text="C"
-            android:textColor="@android:color/white"
-            android:textSize="26dp"/>
-
-        <Button
-            android:id="@+id/btnBackspace"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottomstyle"
-            android:text="DEL"
-            android:textColor="@android:color/white"
-            android:paddingBottom="5dp"
-            android:textSize="26dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,22 +36,32 @@
         android:layout_weight="0.5"
         android:orientation="horizontal">
 
-    <Button
-            android:id="@+id/sin"
-            android:textSize="26dp"
-            android:layout_width="0dip"
+        <Button
+                android:id="@+id/sin"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomstyle"
+                android:text="sin"
+                android:textAllCaps="false"
+                android:textSize="26dp"
+                android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="206dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="sin"
-            android:textAllCaps="false"
             android:background="@drawable/bottomstyle"
-            android:textColor="#FFFFFF"
-            />
+            android:text="C"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
         <Button
             android:id="@+id/cos"
             android:layout_width="0dip"
             android:textSize="26dp"
-            android:layout_height="match_parent"
+            android:layout_height="0dip"
             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="cos"
@@ -82,7 +72,7 @@
             android:id="@+id/x2"
             android:layout_width="0dip"
             android:textSize="26dp"
-            android:layout_height="match_parent"
+            android:layout_height="0dip"
             android:layout_weight="1"
             android:textAllCaps="false"
             android:text="x²"
@@ -93,13 +83,24 @@
             android:id="@+id/x3"
             android:layout_width="0dip"
             android:textSize="26dp"
-            android:layout_height="match_parent"
+            android:layout_height="0dip"
             android:layout_weight="1"
             android:textAllCaps="false"
             android:text="x³"
             android:background="@drawable/bottomstyle"
             android:textColor="#FFFFFF"
             />
+
+        <Button
+            android:id="@+id/btnBackspace"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottomstyle"
+            android:paddingBottom="5dp"
+            android:text="DEL"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
     </LinearLayout>>
     <LinearLayout
         android:layout_width="match_parent"
@@ -311,13 +312,12 @@
         <Button
             android:id="@+id/equals"
             android:layout_width="0dip"
-            android:layout_height="86dp"
+            android:layout_height="101dp"
             android:layout_weight="1"
-            android:text="="
-            android:textSize="26dp"
             android:background="@drawable/bottomstyle2"
+            android:text="="
             android:textColor="#FFFFFF"
-            />
+            android:textSize="26dp" />
 
     </LinearLayout>
 
